@@ -19,6 +19,7 @@ return [
         'factories' => [
             Application::class => ApplicationFactory::class,
             Helper\UrlHelper::class => Helper\UrlHelperFactory::class,
+            App\Middleware\AuthMiddleware::class => App\Middleware\AuthMiddlewareFactory::class,
         ],
     ],
 ];

@@ -7,7 +7,7 @@ return [
         'factories' => [
             Helper\ServerUrlMiddleware::class => Helper\ServerUrlMiddlewareFactory::class,
             Helper\UrlHelperMiddleware::class => Helper\UrlHelperMiddlewareFactory::class,
-        ],
+        ]
     ],
     // This can be used to seed pre- and/or post-routing middleware
     'middleware_pipeline' => [
@@ -40,6 +40,7 @@ return [
                 // - pre-conditions
                 // - modifications to outgoing responses
                 Helper\ServerUrlMiddleware::class,
+                App\Middleware\AuthMiddleware::class,
             ],
             'priority' => 10000,
         ],
@@ -62,7 +63,7 @@ return [
             'middleware' => [
                 // Add error middleware here.
             ],
-            'error'    => true,
+            'error' => true,
             'priority' => -10000,
         ],
     ],

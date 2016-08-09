@@ -1,0 +1,13 @@
+{% set direction = 'rtl' %}
+{% extends '@layout/default.html.twig' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+    <h1>لیست کاربران</h1>
+        {% for user in users %}
+            <div>{{ user.name }} : {{ user.email }}</div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

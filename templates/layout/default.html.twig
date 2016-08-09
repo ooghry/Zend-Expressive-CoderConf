@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <style>
         body { padding-top: 60px; }
-        .app { display: flex; min-height: 100vh; flex-direction: column; }
+        .app { display: flex; min-height: 100vh; flex-direction: column; direction: {{ direction ?: 'ltr' }} }
         .app-content { flex: 1; }
         .app-footer { padding-bottom: 1em; }
         .zf-green, h2 a { color: #68b604; }
@@ -45,6 +45,11 @@
                         <li>
                             <a href="{{ path('api.ping') }}">
                                 Ping Test
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('user.list') }}">
+                                لیست کاربران
                             </a>
                         </li>
                     </ul>

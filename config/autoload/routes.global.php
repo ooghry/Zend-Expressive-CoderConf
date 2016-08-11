@@ -31,5 +31,11 @@ return [
             'middleware' => App\Action\ListAction::class,
             'allowed_methods' => ['GET'],
         ],
+        [
+            'name' => 'download',
+            'path' => '/download/{file:[_0-9a-zA-z\-]+\.\w{1,}}',
+            'middleware' => App\Action\DownloadAction::class,
+            'allowed_methods' => ['GET'],
+        ],
     ],
 ];

@@ -20,6 +20,7 @@ return [
             Application::class => ApplicationFactory::class,
             Helper\UrlHelper::class => Helper\UrlHelperFactory::class,
             App\Middleware\AuthMiddleware::class => App\Middleware\AuthMiddlewareFactory::class,
+            App\Middleware\UnavailableMiddleware::class => App\Middleware\UnavailableMiddlewareFactory::class,
         ],
     ],
 ];

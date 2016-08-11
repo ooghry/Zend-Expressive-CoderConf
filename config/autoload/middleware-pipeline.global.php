@@ -40,6 +40,7 @@ return [
                 // - pre-conditions
                 // - modifications to outgoing responses
                 Helper\ServerUrlMiddleware::class,
+                App\Middleware\UnavailableMiddleware::class,
                 App\Middleware\AuthMiddleware::class,
             ],
             'priority' => PHP_INT_MAX,

@@ -33,7 +33,7 @@ return [
         ],
         [
             'name' => 'download',
-            'path' => '/download/{file:[_0-9a-zA-z\-]+\.\w{1,}}',
+            'path' => '/download/{file:[_0-9a-zA-Z\-]+\.\w{1,}}',
             'middleware' => App\Action\DownloadAction::class,
             'allowed_methods' => ['GET'],
         ],

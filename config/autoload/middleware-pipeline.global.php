@@ -42,7 +42,7 @@ return [
                 Helper\ServerUrlMiddleware::class,
                 App\Middleware\AuthMiddleware::class,
             ],
-            'priority' => 10000,
+            'priority' => PHP_INT_MAX,
         ],
 
         'routing' => [
